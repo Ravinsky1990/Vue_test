@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+.table_wrap{
+  width: 100%;
+  padding: 0px 2rem;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+th, td{
+  border: 2px solid #e6e6e6;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+}
+caption{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff6666;
+}
+input{
+  border: 2px solid #ff6666;
+  border-radius: 20px;
+  width: 22rem;
+  height: 2.2rem;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  outline: none;
+  display: block;
+  margin:20px auto;
+}
+td.total{
+  font-size: 2rem;
+  color: #ff6666;
+}
+.button_wrap{
+  text-align: center;
+}
+.button_wrap button{
+  width: 12rem;
+  height: 2rem;
+  border: 2px solid #ff6666;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: #ff6666;
+  cursor: pointer;
+  outline: none;
+
+}

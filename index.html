@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue_Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app_container">
+        <div class="button_wrap">
+            <button v-on:click="showdata(btn_state)">{{ btn_state }}</button>
+        </div>
+        <input type="text" id="search" v-model="input" autofocus>
+        <div class="table_wrap">
+            <table v-show="show_ok">
+                <caption>Test Vue_js</caption>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>location</th>
+                    <th>currency</th>
+                </tr>
+                <tr v-for="item in customers | filterBy input">
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.location }}</td>
+                    <td>{{ item.currency }}</td>
+                </tr>
+                <tr>
+                    <td class="total">Total</td>
+                    <td></td>
+                    <td></td>
+                    <td class="total">{{ total_cur }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="vue_1.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
