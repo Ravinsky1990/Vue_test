@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,18 @@
     <title>Vue_Test</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="app_container">
         <div class="button_wrap">
-            <button v-on:click="showdata(btn_state)">{{ btn_state }}</button>
+            <button v-on:click="showdata()">{{ btn_state }}</button>
         </div>
-        <input type="text" id="search" v-model="input" autofocus>
+        <input type="text" id="search" v-model="input" autofocus placeholder="Enter name, location or id">
+        <div class="sort_btn">
+            <button v-on:click="showSortByname()">Sort by name</button>
+            <button v-on:click="showSortBylocation()">Sort by location</button>
+            <button v-on:click="showSortBycurrensy()">Sort by currency</button>
+        </div>
         <div class="table_wrap">
             <table v-show="show_ok">
                 <caption>Test Vue_js</caption>
@@ -40,4 +47,5 @@
     <script src="vue_1.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
