@@ -19,10 +19,10 @@ th, td{
 caption{
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #ff6666;
+  color: #239e33;
 }
 input{
-  border: 2px solid #ff6666;
+  border: 2px solid #239e33;
   border-radius: 20px;
   width: 22rem;
   height: 2.2rem;
@@ -34,7 +34,7 @@ input{
 }
 td.total{
   font-size: 2rem;
-  color: #ff6666;
+  color: #239e33;
 }
 .button_wrap{
   text-align: center;
@@ -42,11 +42,11 @@ td.total{
 .button_wrap button{
   width: 12rem;
   height: 2rem;
-  border: 2px solid #ff6666;
+  border: 2px solid #239e33;
   background-color: #ffffff;
   border-radius: 20px;
   font-size: 1.2rem;
-  color: #ff6666;
+  color: #239e33;
   cursor: pointer;
   outline: none;
 
@@ -58,11 +58,11 @@ td.total{
 .sort_btn button{
   width: 10rem;
   height: 2rem;
-  border: 2px solid #ff6666;
+  border: 2px solid #239e33;
   background-color: #ffffff;
   border-radius: 20px;
   font-size: 1.2rem;
-  color: #ff6666;
+  color: #239e33;
   cursor: pointer;
   outline: none;
   margin-right: 12px;
